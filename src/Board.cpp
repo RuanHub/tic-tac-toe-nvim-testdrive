@@ -30,9 +30,10 @@ void Board::makeMove(char piece, int x, int y) {
 char Board::getCharacterAtPos(int x, int y) const {
   if (x * 3 + y >= 9) {
     std::cout << "Input out of range" << std::endl;
-    return NULL;
+    return '\0';
   }
 
   return positions[x * 3 + y];
 }
+
 Board::~Board() {};
